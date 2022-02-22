@@ -1,3 +1,5 @@
+let toggled = false;
+
 const triangle = new Shape(Renderer.DARK_PURPLE)
     .addVertex(100, 100)
     .addVertex(200, 100)
@@ -5,13 +7,23 @@ const triangle = new Shape(Renderer.DARK_PURPLE)
 
 const line = new Shape(Renderer.AQUA).setLine(200, 0, 300, 100, 2);
 
-const circle = new Shape(Renderer.RED).setCircle(200, 200, 50, 30);
+const circle = new Shape(Renderer.RED).setCircle(400, 200, 50, 30);
 
-const lineCopy = triangle.clone().removeVertex(0).insertVertex(0, 300, 300).setColor(Renderer.BLACK);
+const triangleCopy = triangle
+    .clone()
+    .removeVertex(0)
+    .insertVertex(0, 300, 300)
+    .setColor(Renderer.BLACK);
 
 register("renderOverlay", () => {
+    if (!toggled)
+        return;
     triangle.draw();
     line.draw();
     circle.draw();
-    lineCopy.draw();
+    triangleCopy.draw();
 });
+
+register("command", () => {
+    toggled = !toggled;
+}).setName("shapetest");
