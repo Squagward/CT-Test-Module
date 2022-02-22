@@ -2,25 +2,24 @@
  * Should give a command with 3 tab completion options, with an alias
  */
 register("command", (subcommand) => {
-    ChatLib.chat(`Calling /cttest ${subcommand}`);
+    ChatLib.chat(`Calling /commandtest ${subcommand}`);
 })
     .setTabCompletions("sub1", "sub2", "sub3")
-    .setName("cttest")
+    .setName("commandtest")
     .setAliases("ctt");
 
 /**
  * Should error since ct command is already taken
  */
 try {
-    register("command", () => {}).setName("ct");
-    throw new Error("This should be unreachable!");
+    register("command", () => {}).setName("commandtest");
 } catch (e) {
-    ChatLib.chat(`Error: ${e.message}`);
+    console.error(`Error: ${e.message}`);
 }
 
 /**
- * Should override the ct command since overrideExisting is trues
+ * Should override the ctt alias since overrideExisting is true
  */
 register("command", () => {
     ChatLib.chat("This should be overridden!");
-}).setName("chattriggers", true);
+}).setName("ctt", true);
