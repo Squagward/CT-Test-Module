@@ -1,3 +1,3 @@
-export * from "./entity.test";
-export * from "./entitylivingbase.test";
-export * from "./playermp.test";
+export * from "./Entity";
+export * from "./EntityLivingBase";
+export * from "./PlayerMP";

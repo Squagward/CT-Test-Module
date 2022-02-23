@@ -1,1 +1,1 @@
-export * from "./wrappedthread.test";
+export * from "./WrappedThread";

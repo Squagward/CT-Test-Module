@@ -1,1 +1,1 @@
-export * from "./keybind.test";
+export * from "./KeyBind";

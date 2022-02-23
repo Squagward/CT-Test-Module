@@ -3,5 +3,5 @@ export * from "./gui";
 export * from "./keybind";
 export * from "./message";
 
-export * from "./book.test";
-export * from "./sound.test";
+export * from "./Book";
+export * from "./Sound";

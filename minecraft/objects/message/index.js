@@ -1,2 +1,2 @@
-export * from "./message.test";
-export * from "./textcomponent.test";
+export * from "./Message";
+export * from "./TextComponent";
