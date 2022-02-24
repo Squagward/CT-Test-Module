@@ -12,7 +12,9 @@ const circle = new Shape(Renderer.RED).setCircle(400, 200, 50, 30);
 const triangleCopy = triangle
   .clone()
   .removeVertex(0)
+  .removeVertex(0)
   .insertVertex(0, 300, 300)
+  .insertVertex(2, 400, 200)
   .setColor(Renderer.BLACK);
 
 register("renderOverlay", () => {
