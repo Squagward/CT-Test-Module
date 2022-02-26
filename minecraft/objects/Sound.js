@@ -30,5 +30,5 @@ register("command", (arg) => {
 }).setName("soundtest");
 
 register("command", () => {
-  Client.stopAllSounds();
+  World.stopAllSounds();
 }).setName("stopallsounds");

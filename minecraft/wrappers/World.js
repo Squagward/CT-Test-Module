@@ -1,8 +1,10 @@
 register("command", (arg) => {
   if (arg === "start") {
-    World.playSound("records.chirp", 1, 1);
+    World.playRecord("records.chirp", 0, 57, 0);
   } else if (arg === "stop") {
-    World.playSound("null", 1, 1);
+    setTimeout(() => {
+      World.playRecord("null", 0, 57, 0);
+    }, 1);
   } else {
     World.playSound("dig.wood", 1, 1);
     const block = World.getBlockAt(
