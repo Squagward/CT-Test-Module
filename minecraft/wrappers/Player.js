@@ -1,6 +1,8 @@
 let toggle = false;
 
 register("worldLoad", () => {
+  if (!toggle) return;
+
   const player = Player.getPlayer();
   ChatLib.chat(`Welcome ${player.getName()}`);
 

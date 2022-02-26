@@ -28,3 +28,7 @@ register("command", (arg) => {
       break;
   }
 }).setName("soundtest");
+
+register("command", () => {
+  Client.stopAllSounds();
+}).setName("stopallsounds");
