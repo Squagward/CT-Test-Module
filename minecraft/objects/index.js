@@ -1,7 +1,7 @@
-export * from "./display";
-export * from "./gui";
-export * from "./keybind";
-export * from "./message";
+import "./display";
+import "./gui";
+import "./keybind";
+import "./message";
 
-export * from "./Book";
-export * from "./Sound";
+import "./Book";
+import "./Sound";

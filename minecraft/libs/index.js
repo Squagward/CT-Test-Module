@@ -1,7 +1,7 @@
-export * from "./renderer";
+import "./renderer";
 
-export * from "./ChatLib";
-export * from "./EventLib";
-export * from "./FileLib";
-export * from "./MathLib";
-export * from "./Tessellator";
+import "./ChatLib";
+import "./EventLib";
+import "./FileLib";
+import "./MathLib";
+import "./Tessellator";

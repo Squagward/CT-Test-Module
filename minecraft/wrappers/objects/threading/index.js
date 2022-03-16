@@ -1,1 +1,1 @@
-export * from "./WrappedThread";
+import "./WrappedThread";

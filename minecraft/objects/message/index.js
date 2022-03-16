@@ -1,2 +1,2 @@
-export * from "./Message";
-export * from "./TextComponent";
+import "./Message";
+import "./TextComponent";

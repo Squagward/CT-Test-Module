@@ -1,9 +1,9 @@
-export * from "./block";
-export * from "./entity";
-export * from "./inventory";
-export * from "./threading";
+import "./block";
+import "./entity";
+import "./inventory";
+import "./threading";
 
-export * from "./Chunk";
-export * from "./Particle";
-export * from "./PotionEffect";
-export * from "./TileEntity";
+import "./Chunk";
+import "./Particle";
+import "./PotionEffect";
+import "./TileEntity";

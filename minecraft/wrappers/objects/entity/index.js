@@ -1,3 +1,3 @@
-export * from "./Entity";
-export * from "./EntityLivingBase";
-export * from "./PlayerMP";
+import "./Entity";
+import "./EntityLivingBase";
+import "./PlayerMP";

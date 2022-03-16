@@ -1,2 +1,2 @@
-export * from "./Display";
-export * from "./DisplayLine";
+import "./Display";
+import "./DisplayLine";

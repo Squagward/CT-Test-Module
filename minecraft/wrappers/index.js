@@ -1,10 +1,10 @@
-export * from "./objects";
+import "./objects";
 
-export * from "./Client";
-export * from "./CPS";
-export * from "./Player";
-export * from "./Scoreboard";
-export * from "./Server";
-export * from "./Settings";
-export * from "./TabList";
-export * from "./World";
+import "./Client";
+import "./CPS";
+import "./Player";
+import "./Scoreboard";
+import "./Server";
+import "./Settings";
+import "./TabList";
+import "./World";

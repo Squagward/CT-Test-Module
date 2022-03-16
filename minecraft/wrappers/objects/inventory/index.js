@@ -1,5 +1,5 @@
-export * from "./action";
-export * from "./nbt";
+import "./action";
+import "./nbt";
 
-export * from "./Inventory";
-export * from "./Item";
+import "./Inventory";
+import "./Item";
